@@ -17,3 +17,4 @@ CREATE TABLE tbl_test(
 -- 테이블을 영구적으로 물리저장소에서 삭제
 -- 삭제하면 데이터가 모두 손실되므로 매우 신중하게 명령을 수행해야 한다.
 DROP TABLE tbl_test ;
+
