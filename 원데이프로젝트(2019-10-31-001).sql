@@ -37,15 +37,15 @@ SELECT * FROM tbl_books;
 SELECT * FROM tbl_users;
 
 --외래키 생성
-ALTER TABLE tbl_books -- 연동되는 TABLE
+ALTER TABLE tbl_rent_book -- 연동되는 TABLE
 ADD CONSTRAINT FK_BOOKS
-FOREIGN KEY(b_code) -- 연동되는 칼럼
-REFERENCES tbl_rent_book(RENT_BCODE); -- PK 키로 설정된 부분
+FOREIGN KEY(RENT_BCODE) -- 연동되는 칼럼
+REFERENCES tbl_books(b_code); -- PK 키로 설정된 부분
 
-ALTER TABLE tbl_users -- 연동되는 TABLE
+ALTER TABLE tbl_rent_book -- 연동되는 TABLE
 ADD CONSTRAINT FK_USERS
-FOREIGN KEY(u_code) -- 연동되는 칼럼
-REFERENCES tbl_rent_book(RENT_UCODE); -- PK 키로 설정된 부분
+FOREIGN KEY(RENT_UCODE) -- 연동되는 칼럼
+REFERENCES tbl_users(u_code); -- PK 키로 설정된 부분
 
 -- 시퀀스 생성
 CREATE SEQUENCE SEQ_RENT_BOOKS
