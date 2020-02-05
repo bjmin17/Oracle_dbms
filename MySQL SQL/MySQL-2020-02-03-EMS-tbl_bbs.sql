@@ -61,5 +61,5 @@ VALUES ('M04','M02','회원가입','#');
 INSERT INTO `emsdb`.`tbl_menu`
 VALUES ('M05','M02','게시판정리','#');
 
-SELECT * FROM tbl_menu;
+SELECT * FROM tbl_bbs;tbl_bbs
 UPDATE tbl_menu SET menu_p_id = null WHERE menu_id IN ('M01', 'M02') ;
