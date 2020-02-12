@@ -15,3 +15,12 @@ VALUES('user','ROLE_USER');
 SELECT * FROM users;
 SELECT * FROM authorities;
 COMMIT;
+
+DELETE FROM users WHERE username = 'admin';
+DELETE FROM users WHERE username = 'user';
+DELETE FROM users WHERE username = '1';
+
+DELETE FROM authorities WHERE seq = 3;
+DELETE FROM authorities WHERE seq = 4;
+DELETE FROM authorities WHERE seq = 5;
+DELETE FROM authorities WHERE seq = 6;
