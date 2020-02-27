@@ -24,3 +24,6 @@ DELETE FROM authorities WHERE seq = 3;
 DELETE FROM authorities WHERE seq = 4;
 DELETE FROM authorities WHERE seq = 5;
 DELETE FROM authorities WHERE seq = 6;
+
+DESC tbl_product;
+SELECt * FROM tbl_product;
