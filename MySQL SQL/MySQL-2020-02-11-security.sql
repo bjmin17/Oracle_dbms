@@ -26,4 +26,12 @@ DELETE FROM authorities WHERE seq = 5;
 DELETE FROM authorities WHERE seq = 6;
 
 DESC tbl_product;
+DESC tbl_dept;
+
+SELECT * FROM tbl_dept;
 SELECt * FROM tbl_product;
+
+drop table tbl_cart;
+SELECT * FROM tbl_cart;
+
+SELECT * FROM tbl_boards;
